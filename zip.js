@@ -19,7 +19,7 @@ function readDir(obj, nowPath) {
 }
 
 //开始压缩文件
-function zip() {
+function zipFile() {
     var currPath = __dirname;
     var targetDir = path.join(currPath, "test");
     readDir(zip, targetDir);
@@ -34,4 +34,4 @@ function zip() {
     });
 }
 
-module.exports = zip
+module.exports = zipFile
